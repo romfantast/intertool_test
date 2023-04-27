@@ -2,6 +2,9 @@
 @import './utils/mixins';
 
 @import './base/common';
-@import './example';
+@import './base/container';
+@import './base/section';
 
-@import './layout/test';
+@import './layout/_header';
+@import './layout/_search';
+@import './layout/_hero';

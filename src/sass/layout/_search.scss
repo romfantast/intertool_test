@@ -1,0 +1,97 @@
+.search-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-catalog-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 116px;
+  cursor: pointer;
+
+  & span {
+    @include text(16px, 500, 20px);
+    color: var(--secondary-cta-color);
+  }
+}
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 79px;
+  & input {
+    display: inline-block;
+    width: 950px;
+    @include text(16px, 500, 20px);
+    letter-spacing: 0.01em;
+    border: none;
+    background-color: var(--surface-light-color);
+    padding: 12px 46px;
+    color: var(--background-and-text-black-color);
+  }
+
+  & button {
+    @include text(16px, 500, 20px);
+    padding: 12px 14px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--background-and-text-black-color);
+    border: none;
+    background-color: var(--main-cta-color);
+    transition: background-color 150ms linear;
+
+    &:hover {
+      background-color: var(--secondary-cta-color);
+    }
+  }
+}
+.icon-catalog {
+  fill: var(--secondary-cta-color);
+  margin-right: 20px;
+}
+.icon-search {
+  position: absolute;
+  left: 10px;
+  fill: var(--surface-light-color);
+  stroke: var(--secondary-text-color-on-white-bg);
+}
+.search-contacts {
+  display: flex;
+  column-gap: 10px;
+}
+.search-phones-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  & li a {
+    @include text(16px, 500, 20px);
+    letter-spacing: 0.01em;
+    color: var(--background-and-text-black-color);
+  }
+}
+.search-schedule-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  //   margin-top: 4px;
+
+  & ul {
+    @include text(14px, 400, 20px);
+    letter-spacing: 0.01em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  & p {
+    @include text(14px, 400, 20px);
+    letter-spacing: 0.01em;
+    color: var(--secondary-text-color-on-black-bg);
+  }
+  & ul li {
+    color: var(--secondary-text-color-on-black-bg);
+  }
+}

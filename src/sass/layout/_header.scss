@@ -1,0 +1,49 @@
+.header {
+  background-color: var(--background-and-text-black-color);
+}
+.header-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav > a {
+  transition: transform 150ms linear;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+.header-flex-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-pages-list a {
+  display: inline-block;
+  padding: 28px 34px;
+  @include text(16px, 400, 20px);
+  color: var(--background-and-text-white-color);
+  transition: color 150ms linear;
+  &:hover {
+    color: var(--main-cta-color);
+  }
+}
+
+.header-pages-list__item-contact {
+  position: relative;
+  &::after {
+    content: url('../images/svgs/arrow.svg');
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 26px;
+  }
+}
+.header-additional-list {
+  gap: 16px;
+}
+.header-additional-list svg {
+  stroke: var(--background-and-text-white-color);
+  transition: color 150ms linear;
+  &:hover {
+    stroke: var(--main-cta-color);
+    cursor: pointer;
+  }
+}
