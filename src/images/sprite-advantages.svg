@@ -1,0 +1,46 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-delivery" viewBox="0 0 32 32">
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M10.37 31.556h11.259v-11.259h-11.259v11.259z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M21.63 20.296v11.259h-11.259v-11.259M21.63 20.296l9.926-9.482M21.63 20.296h-3.037M10.37 20.296l-9.926-9.482M10.37 20.296h3.037M31.556 10.815c0 0 0-10.37-15.556-10.37s-15.556 10.37-15.556 10.37M31.556 10.815c0 0-2.288-1.296-3.889-1.296s-3.889 1.296-3.889 1.296M0.444 10.815c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296M8.222 10.815l5.185 9.481M8.222 10.815c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296M16 10.815v9.481M16 10.815c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296M23.778 10.815l-5.185 9.481M18.593 20.296h-2.593M16 20.296h-2.593"></path>
+</symbol>
+<symbol id="icon-delivery-active" viewBox="0 0 32 32">
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M31.556 10.815c0 0 0-10.37-15.556-10.37s-15.556 10.37-15.556 10.37c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M21.63 20.296v11.259h-11.259v-11.259M21.63 20.296l9.926-9.482M21.63 20.296h-3.037M10.37 20.296l-9.926-9.482M10.37 20.296h3.037M31.556 10.815c0 0 0-10.37-15.556-10.37s-15.556 10.37-15.556 10.37M31.556 10.815c0 0-2.288-1.296-3.889-1.296s-3.889 1.296-3.889 1.296M0.444 10.815c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296M8.222 10.815l5.185 9.481M8.222 10.815c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296M16 10.815v9.481M16 10.815c0 0 2.288-1.296 3.889-1.296s3.889 1.296 3.889 1.296M23.778 10.815l-5.185 9.481M18.593 20.296h-2.593M16 20.296h-2.593"></path>
+</symbol>
+<symbol id="icon-gift" viewBox="0 0 32 32">
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M11.945 16.219h10.228v-7.671h-12.785v7.671h2.557z"></path>
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M11.945 16.219v15.342h7.671v-15.342h-7.671z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6575" d="M4.274 16.219h-3.836v-7.671h3.836M4.274 16.219v15.342h7.671M4.274 16.219h5.114M27.288 16.219h3.836v-7.671h-3.836M27.288 16.219v15.342h-7.671M27.288 16.219h-5.114M11.945 31.562v-15.342M11.945 31.562h7.671M11.945 16.219h7.671M11.945 16.219h-2.557M19.616 16.219v15.342M19.616 16.219h2.557M9.388 16.219v-7.671M9.388 8.548h6.393M9.388 8.548h-5.114M22.174 16.219v-7.671M22.174 8.548h-6.393M22.174 8.548h5.114M15.781 8.548l8.95-3.356M15.781 8.548l-8.95-3.356M15.781 8.548l-2.131-2.557M15.781 8.548l2.131-2.557M27.288 8.548l-1.279-3.836-1.279 0.479M24.731 5.192l-2.557-4.315-4.262 5.114M4.274 8.548l1.279-3.836 1.279 0.479M6.831 5.192l2.557-4.315 4.262 5.114M13.65 5.991c0 0 1.16-1.279 2.131-1.279s2.131 1.279 2.131 1.279"></path>
+</symbol>
+<symbol id="icon-gift-active" viewBox="0 0 32 32">
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M0.438 8.548v7.671h8.95v-7.671h-8.95z"></path>
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M4.274 16.219v15.342h7.671v-15.342h-7.671z"></path>
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M31.123 16.219v-7.671h-8.95v7.671h8.95z"></path>
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M27.288 31.562v-15.342h-7.671v15.342h7.671z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6575" d="M4.274 16.219h-3.836v-7.671h3.836M4.274 16.219v15.342h7.671M4.274 16.219h5.114M27.288 16.219h3.836v-7.671h-3.836M27.288 16.219v15.342h-7.671M27.288 16.219h-5.114M11.945 31.562v-15.342M11.945 31.562h7.671M11.945 16.219h7.671M11.945 16.219h-2.557M19.616 16.219v15.342M19.616 16.219h2.557M9.388 16.219v-7.671M9.388 8.548h6.393M9.388 8.548h-5.114M22.174 16.219v-7.671M22.174 8.548h-6.393M22.174 8.548h5.114M15.781 8.548l8.95-3.356M15.781 8.548l-8.95-3.356M15.781 8.548l-2.131-2.557M15.781 8.548l2.131-2.557M27.288 8.548l-1.279-3.836-1.279 0.479M24.731 5.192l-2.557-4.315-4.262 5.114M4.274 8.548l1.279-3.836 1.279 0.479M6.831 5.192l2.557-4.315 4.262 5.114M13.65 5.991c0 0 1.16-1.279 2.131-1.279s2.131 1.279 2.131 1.279"></path>
+</symbol>
+<symbol id="icon-safe" viewBox="0 0 24 32">
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M23.778 5.63l-11.667-5.185v31.111c5.185 0 11.667-7.778 11.667-15.556v-10.37z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M12.111 0.444l11.667 5.185M12.111 0.444l-11.667 5.185c0 0 0 2.593 0 10.37s6.481 15.556 11.667 15.556M12.111 0.444v31.111M23.778 5.63c0 0 0 2.593 0 10.37M23.778 5.63v10.37M23.778 16c0 7.778-6.481 15.556-11.667 15.556"></path>
+</symbol>
+<symbol id="icon-safe-active" viewBox="0 0 24 32">
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M0.444 16c0 7.778 6.481 15.556 11.667 15.556v-31.111l-11.667 5.185v10.37z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M12.111 0.444l11.667 5.185M12.111 0.444l-11.667 5.185M12.111 0.444v31.111M23.778 5.63c0 0 0 2.593 0 10.37M23.778 5.63v10.37M23.778 16c0 7.778-6.481 15.556-11.667 15.556M12.111 31.556c-5.185 0-11.667-7.778-11.667-15.556M0.444 16c0-7.778 0-10.37 0-10.37M0.444 16v-10.37"></path>
+</symbol>
+<symbol id="icon-sales" viewBox="0 0 24 32">
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M23.778 8.222l-7.778-7.778v7.778h7.778z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M16 0.444h-15.556v31.111h23.333v-23.333M16 0.444l7.778 7.778M16 0.444v7.778h7.778"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M9.518 13.408c0 1.432-1.161 2.593-2.593 2.593s-2.593-1.161-2.593-2.593c0-1.432 1.161-2.593 2.593-2.593s2.593 1.161 2.593 2.593z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M19.888 23.777c0 1.432-1.161 2.593-2.593 2.593s-2.593-1.161-2.593-2.593c0-1.432 1.161-2.593 2.593-2.593s2.593 1.161 2.593 2.593z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M18.593 12.111l-12.963 12.963"></path>
+</symbol>
+<symbol id="icon-sales-active" viewBox="0 0 24 32">
+<path fill="#fae719" style="fill: var(--color1, #fae719)" d="M16 0.444h-15.556v31.111h23.333v-23.333h-7.778v-7.778z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M16 0.444h-15.556v31.111h23.333v-23.333M16 0.444l7.778 7.778M16 0.444v7.778h7.778"></path>
+<path fill="#fff" style="fill: var(--color3, #fff); stroke: var(--color2, #18191a)" stroke="#18191a" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M9.518 13.408c0 1.432-1.161 2.593-2.593 2.593s-2.593-1.161-2.593-2.593c0-1.432 1.161-2.593 2.593-2.593s2.593 1.161 2.593 2.593z"></path>
+<path fill="#fff" style="fill: var(--color3, #fff); stroke: var(--color2, #18191a)" stroke="#18191a" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M19.888 23.777c0 1.432-1.161 2.593-2.593 2.593s-2.593-1.161-2.593-2.593c0-1.432 1.161-2.593 2.593-2.593s2.593 1.161 2.593 2.593z"></path>
+<path fill="none" stroke="#18191a" style="stroke: var(--color2, #18191a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M18.593 12.111l-12.963 12.963"></path>
+</symbol>
+</defs>
+</svg>

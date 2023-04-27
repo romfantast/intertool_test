@@ -1,0 +1,77 @@
+.articles-wrapper {
+  display: flex;
+  column-gap: 20px;
+  overflow-x: scroll;
+  padding-bottom: 48px;
+}
+.rating-title-wrapper {
+  display: flex;
+  column-gap: 30px;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  & p {
+  @include text(24px, 500, 29px);
+  display: flex;
+  align-items: center;
+  color: var(--background-and-text-black-color);
+  }
+  
+  & a {
+@include text(16px, 500, 20px);
+color: var(--secondary-cta-color);
+letter-spacing: 0.01em;
+  }
+}
+
+.article-response {
+  padding: 20px;
+  border-right: 1px solid var(--surface-grey-color)
+}
+.response-content-wrapper {
+  width: 330px;
+}
+
+.response-top-block {
+  display: flex;
+  gap: 20px;
+}
+.response-user-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 30px;
+  & p {
+@include text(18px, 500, 27px);
+  color: var(--background-and-text-black-color);
+  }
+  & div {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.response-user-text {
+  @include text(14px, 400, 20px);
+  color: var(--background-and-text-black-color);
+  letter-spacing: 0.01em;
+  margin-bottom: 70px;
+}
+.response-date-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  & span {
+    @include text(12px, 400, 15px);
+    color: var(--secondary-text-color-on-black-bg);
+  }
+
+  & a {
+    @include text(12px, 400, 15px);
+    color: var(--secondary-cta-color);
+    transition: color 150ms linear;
+
+    &:hover {
+      color: var(--main-cta-color);
+    }
+  }
+}

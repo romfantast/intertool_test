@@ -1,0 +1,124 @@
+.sales-title-wrapper {
+  display: flex;
+  column-gap: 30px;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  & p {
+  @include text(24px, 500, 29px);
+  display: flex;
+  align-items: center;
+  color: var(--background-and-text-black-color);
+  }
+  
+  & a {
+@include text(16px, 500, 20px);
+color: var(--secondary-cta-color);
+letter-spacing: 0.01em;
+  }
+}
+
+.sales-goods-wrapper  {
+  display: flex;
+  overflow: auto;
+
+  & article {
+    padding: 18px 20px;
+    width: 350px;
+  }
+}
+.sales-picture img{
+  transition: transform 150ms linear;
+}
+.sales-article:hover .sales-picture img{
+  transform: scale(1.2)
+}
+.sales-percent {
+  @include text(18px, 500, 27px);
+      color: var(--green-color);
+}
+.sales-number {
+  @include text(12px, 400, 15px);
+  margin-top: 15px;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color-on-white-bg);
+}
+.sales-good-description {
+  @include text(14px, 400, 20px);
+  margin-top: 7px;
+  letter-spacing: 0.1em;
+  color: var(--background-and-text-black-color);
+}
+.sales-good-price-wrapper {
+  display: flex;
+  align-items: center;
+}
+.sales-good-price-2 {
+  @include text(12px, 400, 15px);
+  letter-spacing: 0.1em;
+  margin-left: 70px;
+  color: var(--background-and-text-black-color);
+  text-decoration: line-through;
+  text-decoration-color: var(--secondary-cta-color);
+}
+.sales-good-price {
+  @include text(18px, 500, 27px);
+  margin-top: 20px;
+  margin-bottom: 21px;
+  letter-spacing: 0.01em;
+  color: var(--background-and-text-black-color);
+}
+
+.sales-good-additional-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & button {
+    @include text(16px,500, 20px);
+    letter-spacing: 0.01em;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: var(--main-cta-color);
+    transition: background-color 150ms linear;
+    &:hover {
+      background-color: var(--secondary-cta-color);
+    }
+  }
+
+  & svg {
+    stroke: var(--background-and-text-black-color);
+    fill: var(--surface-light-color);
+    transition: stroke 150ms linear;
+
+    &:hover {
+      stroke: var(--main-cta-color);
+    }
+  }
+}
+.sales-good-additional-block, .sales-good-price-2 {
+    visibility: hidden;
+    user-select: none;
+}
+.sales-article:hover .sales-good-additional-block, .sales-article:hover  .sales-good-price-2 {
+  visibility: visible;
+  user-select: all;
+}
+.sales-article:hover .sales-percent {
+  visibility: hidden;
+  user-select: none;
+}
+.sales-article:hover {
+background-color: var(--surface-light-color);
+}
+.sales-good-additional-block span {
+  display: inline-block;
+  width: 1px;
+  height: 47px;
+  background-color: var(--main-cta-color);
+}
+.sales-icons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

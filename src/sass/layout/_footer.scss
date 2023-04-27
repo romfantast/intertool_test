@@ -1,0 +1,101 @@
+.footer-section {
+  background-color: var(--background-and-text-black-color);
+}
+.footer-navigation-block {
+  display: flex;
+  justify-content: space-between;
+
+  & div p {
+    @include text(16px, 500, 20px);
+    color: var(--secondary-text-color-on-black-bg);
+    margin-bottom: 22px;
+  }
+
+  & div ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    &  li a {
+    @include text(16px, 500, 20px);
+    color: var(--background-and-text-white-color);
+  }
+  }
+}
+
+.footer-navigation-block-contacts {
+  display: flex;
+  height: max-content;
+  align-items: center;
+}
+
+#footer-navigation-block-social {
+  flex-direction: row;
+  column-gap: 26px;
+
+  & li a svg {
+    fill: inherit;
+    stroke: var(--surface-dark-color);
+  }
+}
+.footer-subscribe-block {
+  display: flex;
+  justify-content: flex-end;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    width: 350px;
+
+    & label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    letter-spacing: 0.01em;
+      & span {
+      @include text(16px, 400, 22px);
+      color: var(--secondary-cta-color)
+    }
+
+    & input {
+      border: none;
+      padding: 15px 20px;
+      background-color: var(--surface-dark-color);
+    }
+    }
+    & button {
+      color: var(--secondary-cta-color);
+      display: inline-block;
+      border: none;
+      background-color: inherit;
+      width: max-content;
+      align-self: flex-end;
+    }
+  }
+}
+
+.footer-additional-block {
+  display: flex;
+  column-gap: 170px;
+  align-items: flex-start;
+}
+.additional-block-terms p {
+  max-width: 530px;
+  color: var(--secondary-text-color-on-white-bg);
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+  & span {
+    color: var(--secondary-cta-color);
+  }
+}
+.additional-block-cards {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+
+  & svg {
+    fill: var(--secondary-text-color-on-white-bg);
+  }
+}
