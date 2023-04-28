@@ -30,5 +30,5 @@ function validateEmail(e) {
   e.preventDefault();
   const isEmail = validator.isEmail(emailField.value);
 
-  createError(isEmail, subscribeForm, 'error-email', 'Вводити справжній email');
+  createError(isEmail, subscribeForm, 'error-email', 'Ввeдіть справжній email');
 }
