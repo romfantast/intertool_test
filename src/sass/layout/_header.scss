@@ -1,6 +1,10 @@
 .header {
   background-color: var(--background-and-text-black-color);
 }
+.header-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .header-nav {
   justify-content: space-between;
   align-items: center;

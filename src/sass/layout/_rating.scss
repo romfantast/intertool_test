@@ -10,22 +10,28 @@
   align-items: flex-end;
   margin-bottom: 50px;
   & p {
-  @include text(24px, 500, 29px);
-  display: flex;
-  align-items: center;
-  color: var(--background-and-text-black-color);
+    @include text(24px, 500, 29px);
+    display: flex;
+    align-items: center;
+    color: var(--background-and-text-black-color);
   }
-  
+
   & a {
-@include text(16px, 500, 20px);
-color: var(--secondary-cta-color);
-letter-spacing: 0.01em;
+    @include text(16px, 500, 20px);
+    color: var(--secondary-cta-color);
+    letter-spacing: 0.01em;
+
+    &:hover {
+      background: inherit;
+      border-bottom: 2px solid var(--secondary-cta-color);
+      margin-bottom: -1px;
+    }
   }
 }
 
 .article-response {
   padding: 20px;
-  border-right: 1px solid var(--surface-grey-color)
+  border-right: 1px solid var(--surface-grey-color);
 }
 .response-content-wrapper {
   width: 330px;
@@ -41,8 +47,8 @@ letter-spacing: 0.01em;
   row-gap: 10px;
   margin-bottom: 30px;
   & p {
-@include text(18px, 500, 27px);
-  color: var(--background-and-text-black-color);
+    @include text(18px, 500, 27px);
+    color: var(--background-and-text-black-color);
   }
   & div {
     display: flex;

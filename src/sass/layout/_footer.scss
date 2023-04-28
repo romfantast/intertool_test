@@ -3,7 +3,12 @@
 }
 .footer-navigation-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  & a {
+    padding-right: 10px;
+  }
 
   & div p {
     @include text(16px, 500, 20px);
@@ -15,10 +20,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    &  li a {
-    @include text(16px, 500, 20px);
-    color: var(--background-and-text-white-color);
-  }
+    padding: 10px;
+    & li a {
+      @include text(16px, 500, 20px);
+      color: var(--background-and-text-white-color);
+    }
   }
 }
 
@@ -31,11 +37,6 @@
 #footer-navigation-block-social {
   flex-direction: row;
   column-gap: 26px;
-
-  & li a svg {
-    fill: inherit;
-    stroke: var(--surface-dark-color);
-  }
 }
 .footer-subscribe-block {
   display: flex;
@@ -45,23 +46,24 @@
     display: flex;
     flex-direction: column;
     row-gap: 22px;
-    width: 350px;
+    max-width: 350px;
 
     & label {
-    display: flex;
-    flex-direction: column;
-    row-gap: 22px;
-    letter-spacing: 0.01em;
+      display: flex;
+      flex-direction: column;
+      row-gap: 22px;
+      letter-spacing: 0.01em;
       & span {
-      @include text(16px, 400, 22px);
-      color: var(--secondary-cta-color)
-    }
+        @include text(16px, 400, 22px);
+        color: var(--secondary-cta-color);
+      }
 
-    & input {
-      border: none;
-      padding: 15px 20px;
-      background-color: var(--surface-dark-color);
-    }
+      & input {
+        width: 100%;
+        border: none;
+        padding: 15px 20px;
+        background-color: var(--surface-dark-color);
+      }
     }
     & button {
       color: var(--secondary-cta-color);
@@ -76,8 +78,11 @@
 
 .footer-additional-block {
   display: flex;
-  column-gap: 170px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: space-between;
   align-items: flex-start;
+  max-width: 1124px;
 }
 .additional-block-terms p {
   max-width: 530px;
@@ -92,10 +97,42 @@
 }
 .additional-block-cards {
   display: flex;
+  row-gap: 10px;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 30px;
 
   & svg {
     fill: var(--secondary-text-color-on-white-bg);
+  }
+}
+
+@media screen and (max-width: 1186px) {
+  #footer-navigation-block-social {
+    flex-direction: column;
+  }
+  .footer-subscribe-block {
+    justify-content: flex-start;
+  }
+  .footer-navigation-block {
+    & a {
+      margin-bottom: 10px;
+    }
+  }
+  .footer-subscribe-block {
+    margin-bottom: 20px;
+  }
+  .additional-block-cards {
+    & svg {
+      // width: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .additional-block-cards {
+    & svg {
+      width: 70px;
+    }
   }
 }

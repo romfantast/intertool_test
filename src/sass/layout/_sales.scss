@@ -4,20 +4,26 @@
   align-items: flex-end;
   margin-bottom: 50px;
   & p {
-  @include text(24px, 500, 29px);
-  display: flex;
-  align-items: center;
-  color: var(--background-and-text-black-color);
+    @include text(24px, 500, 29px);
+    display: flex;
+    align-items: center;
+    color: var(--background-and-text-black-color);
   }
-  
+
   & a {
-@include text(16px, 500, 20px);
-color: var(--secondary-cta-color);
-letter-spacing: 0.01em;
+    @include text(16px, 500, 20px);
+    color: var(--secondary-cta-color);
+    letter-spacing: 0.01em;
+
+    &:hover {
+      background: inherit;
+      border-bottom: 2px solid var(--secondary-cta-color);
+      margin-bottom: -2px;
+    }
   }
 }
 
-.sales-goods-wrapper  {
+.sales-goods-wrapper {
   display: flex;
   overflow: auto;
 
@@ -26,15 +32,15 @@ letter-spacing: 0.01em;
     width: 350px;
   }
 }
-.sales-picture img{
+.sales-picture img {
   transition: transform 150ms linear;
 }
-.sales-article:hover .sales-picture img{
-  transform: scale(1.2)
+.sales-article:hover .sales-picture img {
+  transform: scale(1.2);
 }
 .sales-percent {
   @include text(18px, 500, 27px);
-      color: var(--green-color);
+  color: var(--green-color);
 }
 .sales-number {
   @include text(12px, 400, 15px);
@@ -74,7 +80,7 @@ letter-spacing: 0.01em;
   align-items: center;
 
   & button {
-    @include text(16px,500, 20px);
+    @include text(16px, 500, 20px);
     letter-spacing: 0.01em;
     border: none;
     padding: 15px;
@@ -96,11 +102,13 @@ letter-spacing: 0.01em;
     }
   }
 }
-.sales-good-additional-block, .sales-good-price-2 {
-    visibility: hidden;
-    user-select: none;
+.sales-good-additional-block,
+.sales-good-price-2 {
+  visibility: hidden;
+  user-select: none;
 }
-.sales-article:hover .sales-good-additional-block, .sales-article:hover  .sales-good-price-2 {
+.sales-article:hover .sales-good-additional-block,
+.sales-article:hover .sales-good-price-2 {
   visibility: visible;
   user-select: all;
 }
@@ -109,7 +117,7 @@ letter-spacing: 0.01em;
   user-select: none;
 }
 .sales-article:hover {
-background-color: var(--surface-light-color);
+  background-color: var(--surface-light-color);
 }
 .sales-good-additional-block span {
   display: inline-block;

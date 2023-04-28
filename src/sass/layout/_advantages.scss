@@ -1,16 +1,17 @@
 .advantages-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  height: 500px;
 }
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  align-self: center
+  align-self: center;
+  margin-top: 30px;
 }
 .advantages-title {
   @include text(24px, 500, 29px);
-  color: var(--background-and-text-black-color)
+  color: var(--background-and-text-black-color);
 }
 
 .advantages-list__item {
@@ -18,30 +19,48 @@
   flex-direction: column;
   row-gap: 15px;
   padding: 20px;
+  width: 100%;
   max-width: 350px;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-container {
+    justify-content: center;
+  }
+  .advantages-list {
+    justify-content: center;
+  }
+  .advantages-list__item p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantages-list__item-description {
+    text-align: center;
+  }
 }
 
 .advantages-list__item:first-child {
   @include text(18px, 500, 27px);
-  color: var(--background-and-text-black-color)
+  color: var(--background-and-text-black-color);
 }
 .advantages-list__item-description {
-    @include text(14px, 500, 20px);
+  @include text(14px, 500, 20px);
   color: var(--secondary-text-color-on-black-bg);
   letter-spacing: 0.01em;
 }
 
-.advantages-list__item:hover .advantages-list__item-title1::before{
-content: url('../images/svgs/safe-active.svg');
+.advantages-list__item:hover .advantages-list__item-title1::before {
+  content: url('../images/svgs/safe-active.svg');
 }
-.advantages-list__item:hover .advantages-list__item-title2::before{
-content: url('../images/svgs/delivery-active.svg');
+.advantages-list__item:hover .advantages-list__item-title2::before {
+  content: url('../images/svgs/delivery-active.svg');
 }
-.advantages-list__item:hover .advantages-list__item-title3::before{
-content: url('../images/svgs/gift-active.svg');
+.advantages-list__item:hover .advantages-list__item-title3::before {
+  content: url('../images/svgs/gift-active.svg');
 }
-.advantages-list__item:hover .advantages-list__item-title4::before{
-content: url('../images/svgs/sales-active.svg');
+.advantages-list__item:hover .advantages-list__item-title4::before {
+  content: url('../images/svgs/sales-active.svg');
 }
 
 .advantages-list__item-title1::before {
@@ -50,7 +69,7 @@ content: url('../images/svgs/sales-active.svg');
   width: 52px;
   height: 70px;
   margin-bottom: 25px;
-} 
+}
 .advantages-list__item-title2::before {
   content: url('../images/svgs/delivery.svg');
   display: block;
