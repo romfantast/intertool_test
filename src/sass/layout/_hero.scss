@@ -1,6 +1,11 @@
 .swiper {
   width: 100%;
   height: 650px;
+
+}
+#swiper-custom-slide1, #swiper-custom-slide2, #swiper-custom-slide3, #swiper-custom-slide4{
+  display: flex;
+  justify-content: center;
 }
 
 .swiper-slide picture img {
@@ -13,4 +18,9 @@
 
 .swiper-horizontal .swiper-pagination-bullet {
   background-color: var(--secondary-text-color-on-black-bg);
+}
+
+.swiper-wrapper {
+
+    
 }
