@@ -21,9 +21,15 @@
     flex-direction: column;
     row-gap: 10px;
     padding: 10px;
-    & li a {
-      @include text(16px, 500, 20px);
-      color: var(--background-and-text-white-color);
+    & li {
+      & a {
+        @include text(16px, 500, 20px);
+        color: var(--background-and-text-white-color);
+        transition: color 150ms linear;
+      }
+      &:hover a {
+        color: var(--secondary-cta-color);
+      }
     }
   }
 }
@@ -74,6 +80,10 @@
       background-color: inherit;
       width: max-content;
       align-self: flex-end;
+      transition: color 150ms linear;
+      &:hover {
+        color: var(--main-cta-color);
+      }
     }
   }
 }
@@ -125,7 +135,8 @@
     margin-bottom: 20px;
   }
 }
-.error-email, .error-search {
+.error-email,
+.error-search {
   position: absolute;
   top: 48px;
   color: red;

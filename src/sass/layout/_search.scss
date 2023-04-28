@@ -77,6 +77,10 @@
     @include text(16px, 500, 20px);
     letter-spacing: 0.01em;
     color: var(--background-and-text-black-color);
+    transition: color 150ms linear;
+    &:hover {
+      color: var(--secondary-text-color-on-black-bg);
+    }
   }
 }
 .search-schedule-list {
