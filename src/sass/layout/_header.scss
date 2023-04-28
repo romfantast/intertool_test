@@ -11,6 +11,11 @@
 }
 .header-nav > a {
   transition: transform 150ms linear;
+
+  & svg {
+    width: 194px;
+    height: 20px;
+  }
   &:hover {
     transform: scale(1.05);
   }
@@ -49,5 +54,18 @@
   &:hover {
     stroke: var(--main-cta-color);
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-pages-list {
+    display: none;
+  }
+  .header-nav a svg {
+width: 145px;
+    height: 18px;
+  }
+  .header-nav__logo {
+    
   }
 }

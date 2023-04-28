@@ -109,3 +109,39 @@
     color: var(--secondary-text-color-on-black-bg);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .search-container {
+    flex-wrap: nowrap;
+    row-gap: 0px;
+  }
+  .search-phones-list, .search-schedule-list {
+    display: none;
+  }
+  .search-catalog-wrapper {
+    & button {
+      display: none;
+    }
+  }
+  .search-form {
+    max-width: 265px;
+    & button {
+      display: none;
+    }
+  }
+  .search-catalog-menu {
+        border: none;
+    background-color: inherit;
+  }
+  .modal-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: inherit;
+    & svg {
+      stroke: black;
+    }
+    
+  }
+}

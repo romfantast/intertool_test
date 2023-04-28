@@ -1,13 +1,19 @@
 <section class="search-section">
 	<div class="container search-container">
 		<div class="search-catalog-wrapper">
-			<button>
+			<button type="button" class="search-catalog-menu">
 				<svg width="24" height="24" class="icon-catalog">
 					<use href="./images/sprite.svg#icon-catalog"></use>
 				</svg>
 				КАТАЛОГ ТОВАРІВ
 			</button>
+			
 		</div>
+		<button class="modal-burger" type="button" title="menu">
+				<svg width="25" height="25">
+					<use href="./images/sprite.svg#icon-burger"></use>
+				</svg>
+			</button>
 		<form class="search-form" data-search-form>
 			<svg width="24" height="24" class="icon-search">
 				<use href="./images/sprite.svg#icon-search"></use>
@@ -15,6 +21,11 @@
 			<input type="text" placeholder="Пошук по сайту" data-search-field>
 			<button type="submit">Знайти</button>
 		</form>
+		<button type="button" class="search-catalog-menu">
+				<svg width="24" height="24" class="icon-catalog">
+					<use href="./images/sprite.svg#icon-catalog"></use>
+				</svg>
+		</button>
 		<div class="search-contacts">
 			<ul class="search-phones-list">
 				<li><a href="tel:+380505522945">050 552 29 45</a></li>
