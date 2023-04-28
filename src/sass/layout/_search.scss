@@ -16,7 +16,11 @@
   //   margin-right: 116px;
   cursor: pointer;
 
-  & span {
+  & button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: inherit;
     @include text(16px, 500, 20px);
     color: var(--secondary-cta-color);
   }

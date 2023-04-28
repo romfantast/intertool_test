@@ -43,6 +43,25 @@
 #footer-navigation-block-social {
   flex-direction: row;
   column-gap: 26px;
+
+  & li a {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--surface-dark-color);
+
+    & svg {
+      fill: var(--background-and-text-white-color);
+      transition: fill 150ms linear;
+    }
+    &:hover svg {
+      fill: var(--main-cta-color);
+    }
+  }
 }
 .footer-subscribe-block {
   display: flex;
