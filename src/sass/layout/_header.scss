@@ -57,15 +57,12 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1919px) {
   .header-pages-list {
     display: none;
   }
   .header-nav a svg {
-width: 145px;
+    width: 145px;
     height: 18px;
-  }
-  .header-nav__logo {
-    
   }
 }

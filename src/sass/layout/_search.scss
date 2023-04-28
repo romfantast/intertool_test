@@ -111,23 +111,28 @@
 }
 
 @media screen and (max-width: 767px) {
+  .search-form {
+      max-width: 265px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
   .search-container {
     flex-wrap: nowrap;
+    justify-content: space-between;
     row-gap: 0px;
   }
   .search-phones-list, .search-schedule-list {
     display: none;
   }
   .search-catalog-wrapper {
+    display: none;
     & button {
       display: none;
     }
   }
-  .search-form {
-    max-width: 265px;
-    & button {
-      display: none;
-    }
+  .search-contacts {
+    display: none;
   }
   .search-catalog-menu {
         border: none;
@@ -143,5 +148,42 @@
       stroke: black;
     }
     
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-burger {
+    display: none;
+  }
+
+    .search-form {
+    & button {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 1919px) {
+    .search-contacts {
+    display: none;
+  }
+
+    .modal-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: inherit;
+    & svg {
+      stroke: black;
+    }
+    
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  
+  .search-catalog-menu {
+    display: none;
   }
 }
