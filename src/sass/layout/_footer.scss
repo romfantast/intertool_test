@@ -43,6 +43,7 @@
   justify-content: flex-end;
 
   & form {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 22px;
@@ -62,6 +63,7 @@
         width: 100%;
         border: none;
         padding: 15px 20px;
+        color: var(--background-and-text-white-color);
         background-color: var(--surface-dark-color);
       }
     }
@@ -122,11 +124,11 @@
   .footer-subscribe-block {
     margin-bottom: 20px;
   }
-  .additional-block-cards {
-    & svg {
-      // width: 70px;
-    }
-  }
+}
+.error-email, .error-search {
+  position: absolute;
+  top: 48px;
+  color: red;
 }
 
 @media screen and (max-width: 320px) {
