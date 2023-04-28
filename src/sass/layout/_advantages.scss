@@ -15,12 +15,34 @@
 }
 
 .advantages-list__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
   padding: 20px;
   width: 100%;
   max-width: 350px;
+  height: 320px;
+
+  & a {
+    position: absolute;
+    bottom: 20;
+    @include text(16px, 500,20px);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--secondary-cta-color);
+    
+    // visibility: hidden;
+    user-select: none;
+  }
+
+  &:hover {
+    background-color: var(--surface-light-color);
+
+    & a {
+      text-decoration: underline;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
