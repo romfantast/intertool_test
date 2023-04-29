@@ -184,6 +184,8 @@
         margin-left: auto;
         margin-top: -2px;
         position: relative;
+        transition: transform 150ms linear;
+        transform: var(--rotate-arrow);
       }
     }
     .dropdown {
