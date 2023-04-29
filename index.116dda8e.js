@@ -1,2 +1,0 @@
-const t=[document.querySelector("[data-about-us]"),document.querySelector("[data-about-service]"),document.querySelector("[data-about-usefull]")];for(let e=0;e<t.length;e+=1)t[e].addEventListener("click",(()=>{console.log(t[e].attributes[0].nodeName.split("-"));const o=t[e].attributes[0].nodeName.toString().split("-")[2],l=document.querySelector(`.footer-navigation-block div ul[data-${o}-list]`);console.log(l),l.classList.toggle("dropdown")}));
-//# sourceMappingURL=index.116dda8e.js.map
