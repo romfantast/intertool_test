@@ -81,3 +81,33 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1023px) {
+  .article-response {
+    max-width: 260px;
+  }
+  .response-user-text {
+    max-width: 230px;
+  }
+  .response-date-wrapper {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .article-response {
+    max-width: 315px;
+  }
+  .response-user-text, .response-date-wrapper {
+    max-width: 269px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .article-response {
+    max-width: 330px;
+  }
+  .response-user-text, .response-date-wrapper {
+    max-width: 285px;
+  }
+}

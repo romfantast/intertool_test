@@ -13,14 +13,13 @@
   & div p {
     @include text(16px, 500, 20px);
     color: var(--secondary-text-color-on-black-bg);
-    margin-bottom: 22px;
   }
 
   & div ul {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
     & li {
       & a {
         @include text(16px, 500, 20px);
@@ -169,7 +168,7 @@
   }
 }
 
-@media screen and(max-width: 1024px) {
+@media screen and(max-width: 1023px) {
   .footer-navigation-block div {
     width: 100%;
     & p {
@@ -178,6 +177,7 @@
       align-items: center;
       padding: 15px 11px;
       border-bottom: 1px solid var(--secondary-cta-color);
+      transition: color 150ms linear;
 
       &::after {
         content: url('../images/svgs/arrow.svg');
@@ -194,6 +194,13 @@
       height: max-content;
       user-select: all;
       pointer-events: all;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--secondary-cta-color);
+    }
+    .active-title {
+      border-bottom: none;
+      color: var(--secondary-text-color-on-white-bg);
     }
     .rotateArrow {
       transform: rotate(180deg);
@@ -202,6 +209,7 @@
   .footer-navigation-block div {
     overflow: hidden;
   }
+
   .footer-navigation-block div ul {
     z-index: 10;
     height: 0;
@@ -216,4 +224,119 @@
   .footer-navigation-block-contacts {
     display: none;
   }
+  .footer-search-contacts {
+    display: flex;
+    max-width: 335px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+   .footer-search-phones-list, .footer-search-schedule-list {
+    display: flex;
+    row-gap: 25px;
+  }
+  .footer-search-schedule-list ul {
+    row-gap: 25px;
+  }
+  .footer-search-phones-list li a {
+    color: var(--background-and-text-white-color);
+  }
+  .footer-callback-wrapper{
+    margin-bottom: 60px;
+    & button {
+      @include text (14px, 500, 17px);
+      color: var(--secondary-cta-color);
+      border: none;
+      background-color: inherit;
+      text-transform: uppercase;
+      padding: 0;
+    }
+  }
+  .footer-subscribe-block {
+    & form{
+      max-width: 536px;
+    }
+  }
+  .additional-block-cards {
+    column-gap: 15px;
+    & svg {
+    display: inline-block;
+    height: 35px;
+  }
+  }
+  .additional-block-cards-mastercard {
+    width: 45px;
+  }
+  .additional-block-cards-visa {
+  width: 60px;
+  }
+  .additional-block-cards-privatbank {
+  width: 208px;
+  }
+  .additional-block-cards {
+    display: none;
+  }
+  .mobile-additional-block-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 25px;
+  }
+  .footer-navigation-block div ul {
+    row-gap: 20px;
+  }
+  .footer-navigation-block div ul li a {
+    @include text(14px, 400,17px);
+  }
 }
+
+@media screen and (min-width: 1024px) {
+  .additional-block-cards {
+    display: flex;
+    column-gap: 12px;
+    & svg {
+    display: inline-block;
+    height: 30px;
+  }
+  }
+  .additional-block-cards-mastercard {
+    width: 40px;
+  }
+  .additional-block-cards-visa {
+  width: 50px;
+  }
+  .additional-block-cards-privatbank {
+  width: 178px;
+  }
+  .mobile-additional-block-cards {
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .additional-block-cards {
+    column-gap: 30px;
+    & svg {
+    display: inline-block;
+    height: 40px;
+  }
+  }
+  .additional-block-cards-mastercard {
+    width: 52px;
+  }
+  .additional-block-cards-visa {
+  width: 68px;
+  }
+  .additional-block-cards-privatbank {
+  width: 238px;
+  }
+}
+@media screen and (min-width: 1024px) {
+    .footer-navigation-block div p {
+    margin-bottom: 22px;
+  }
+  .footer-callback-wrapper{
+    display: none;
+  }
+}
+

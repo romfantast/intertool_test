@@ -128,7 +128,44 @@
   gap: 12px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+  .sales-article {
+    width: 250px;
+
+    & picture  {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      & img {
+      width: 180px;
+    }
+    }
+  }
+}
+@media screen and (max-width: 1919px) {
+  .sales-article {
+    width: 314px;
+
+    & picture  {
+      & img {
+      width: 234px;
+    }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .sales-article {
+    width: 350px;
+
+    & picture  {
+      & img {
+      width: 280px;
+    }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
 .sales-article .sales-good-additional-block,
 .sales-article .sales-good-price-2 {
   visibility: visible;
@@ -169,7 +206,7 @@
 }
 
 .sales-good-additional-block {
-  margin-top: -55px;
+  margin-top: -59px;
   justify-content: flex-end;
 }
 }

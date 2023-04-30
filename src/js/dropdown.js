@@ -17,9 +17,11 @@ for (let i = 0; i < paragraphTitles.length; i += 1) {
     );
 
     if (element.classList.contains('dropdown')) {
+      paragraphTitles[i].classList.remove('active-title');
       element.classList.remove('dropdown');
       arrow.style.setProperty('--rotate-arrow', 'rotate(0deg)');
     } else {
+      paragraphTitles[i].classList.add('active-title');
       element.classList.add('dropdown');
       arrow.style.setProperty('--rotate-arrow', 'rotate(180deg)');
     }
